@@ -1411,13 +1411,13 @@ Epson Toyocom FCC-255</description>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<wire x1="81.28" y1="33.02" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="30.48" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="40.64" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="30.48" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="33.02" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="33.02" x2="99.06" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="33.02" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="33.02" x2="81.28" y2="30.48" width="0" layer="91"/>
+<wire x1="81.28" y1="30.48" x2="81.28" y2="27.94" width="0" layer="91"/>
+<wire x1="81.28" y1="40.64" x2="81.28" y2="33.02" width="0" layer="91"/>
+<wire x1="91.44" y1="30.48" x2="91.44" y2="33.02" width="0" layer="91"/>
+<wire x1="91.44" y1="33.02" x2="81.28" y2="33.02" width="0" layer="91"/>
+<wire x1="91.44" y1="33.02" x2="99.06" y2="33.02" width="0" layer="91"/>
+<wire x1="99.06" y1="33.02" x2="99.06" y2="30.48" width="0" layer="91"/>
 <label x="83.82" y="33.02" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="VCC@1"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="VCC@2"/>
@@ -1427,58 +1427,48 @@ Epson Toyocom FCC-255</description>
 <pinref part="C2" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
-<wire x1="119.38" y1="-2.54" x2="111.76" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="-2.54" x2="111.76" y2="-2.54" width="0" layer="91"/>
 <label x="111.76" y="-2.54" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="VO"/>
 </segment>
 <segment>
-<wire x1="-25.4" y1="83.82" x2="-20.32" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="83.82" x2="-20.32" y2="83.82" width="0" layer="91"/>
 <label x="-20.32" y="83.82" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="18"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="83.82" x2="99.06" y2="83.82" width="0" layer="91"/>
 <label x="96.52" y="83.82" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="-33.02" y1="15.24" x2="-30.48" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="15.24" x2="-30.48" y2="15.24" width="0" layer="91"/>
 <label x="-27.94" y="15.24" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="VUSB" class="0">
 <segment>
-<wire x1="137.16" y1="0" x2="139.7" y2="0" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="0" x2="139.7" y2="0" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="0" x2="139.7" y2="0" width="0" layer="91"/>
+<wire x1="142.24" y1="0" x2="139.7" y2="0" width="0" layer="91"/>
 <label x="142.24" y="0" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="V+"/>
 </segment>
 <segment>
-<wire x1="-25.4" y1="81.28" x2="-20.32" y2="81.28" width="0.1524" layer="91"/>
-<label x="-20.32" y="81.28" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="17"/>
-</segment>
-<segment>
-<wire x1="101.6" y1="81.28" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
-<label x="96.52" y="81.28" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="3"/>
-</segment>
-<segment>
-<wire x1="160.02" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="63.5" x2="152.4" y2="63.5" width="0" layer="91"/>
 <label x="147.32" y="63.5" size="1.778" layer="95"/>
 <pinref part="CN1" gate="G$1" pin="VBUS"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="81.28" y1="17.78" x2="81.28" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="15.24" x2="81.28" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="12.7" x2="81.28" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="22.86" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="22.86" x2="99.06" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="17.78" x2="81.28" y2="15.24" width="0" layer="91"/>
+<wire x1="81.28" y1="15.24" x2="81.28" y2="12.7" width="0" layer="91"/>
+<wire x1="81.28" y1="12.7" x2="81.28" y2="10.16" width="0" layer="91"/>
+<wire x1="91.44" y1="22.86" x2="91.44" y2="17.78" width="0" layer="91"/>
+<wire x1="91.44" y1="17.78" x2="81.28" y2="17.78" width="0" layer="91"/>
+<wire x1="99.06" y1="22.86" x2="99.06" y2="17.78" width="0" layer="91"/>
+<wire x1="99.06" y1="17.78" x2="91.44" y2="17.78" width="0" layer="91"/>
 <label x="83.82" y="17.78" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="GND@1"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="GND@2"/>
@@ -1488,7 +1478,7 @@ Epson Toyocom FCC-255</description>
 <pinref part="C2" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<wire x1="119.38" y1="2.54" x2="114.3" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="2.54" x2="114.3" y2="2.54" width="0" layer="91"/>
 <label x="111.76" y="2.54" size="1.778" layer="95"/>
 <label x="111.76" y="2.54" size="1.778" layer="95"/>
 <label x="111.76" y="2.54" size="1.778" layer="95"/>
@@ -1496,22 +1486,22 @@ Epson Toyocom FCC-255</description>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="-25.4" y1="86.36" x2="-20.32" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="86.36" x2="-20.32" y2="86.36" width="0" layer="91"/>
 <label x="-20.32" y="86.36" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="19"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="86.36" x2="99.06" y2="86.36" width="0" layer="91"/>
 <label x="96.52" y="86.36" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="160.02" y1="73.66" x2="152.4" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="73.66" x2="152.4" y2="73.66" width="0" layer="91"/>
 <label x="147.32" y="73.66" size="1.778" layer="95"/>
 <pinref part="CN1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="-33.02" y1="10.16" x2="-30.48" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="10.16" x2="-30.48" y2="10.16" width="0" layer="91"/>
 <label x="-27.94" y="10.16" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="6"/>
 </segment>
@@ -1524,346 +1514,366 @@ Epson Toyocom FCC-255</description>
 <label x="5.08" y="2.54" size="1.778" layer="95"/>
 <junction x="0" y="2.54"/>
 </segment>
+<segment>
+<wire x1="101.6" y1="81.28" x2="99.06" y2="81.28" width="0" layer="91"/>
+<label x="96.52" y="81.28" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<wire x1="-25.4" y1="81.28" x2="-20.32" y2="81.28" width="0" layer="91"/>
+<label x="-20.32" y="81.28" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="17"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="2"/>
+<wire x1="-25.4" y1="43.18" x2="-22.86" y2="43.18" width="0" layer="91"/>
+<label x="-22.86" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="1"/>
+<wire x1="-25.4" y1="40.64" x2="-22.86" y2="40.64" width="0" layer="91"/>
+<label x="-22.86" y="40.64" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PDI-DATA" class="0">
 <segment>
-<wire x1="20.32" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="22.86" x2="12.7" y2="22.86" width="0" layer="91"/>
 <label x="7.62" y="22.86" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PDI-DATA"/>
 </segment>
 <segment>
-<wire x1="-43.18" y1="15.24" x2="-40.64" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="15.24" x2="-40.64" y2="15.24" width="0" layer="91"/>
 <label x="-45.72" y="15.24" size="1.778" layer="95" rot="R180"/>
 <pinref part="JP1" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="PDI-CLK" class="0">
 <segment>
-<wire x1="20.32" y1="88.9" x2="15.24" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="88.9" x2="15.24" y2="88.9" width="0" layer="91"/>
 <label x="10.16" y="88.9" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="RESET/PDI-CLK"/>
 </segment>
 <segment>
-<wire x1="-43.18" y1="10.16" x2="-40.64" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="10.16" x2="-40.64" y2="10.16" width="0" layer="91"/>
 <label x="-45.72" y="10.16" size="1.778" layer="95" rot="R180"/>
 <pinref part="JP1" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="USB+" class="0">
 <segment>
-<wire x1="81.28" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="66.04" x2="86.36" y2="66.04" width="0" layer="91"/>
 <label x="86.36" y="66.04" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="TXD1/USB+/PD7"/>
 </segment>
 <segment>
-<wire x1="160.02" y1="66.04" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="66.04" x2="152.4" y2="66.04" width="0" layer="91"/>
 <label x="147.32" y="66.04" size="1.778" layer="95"/>
 <pinref part="CN1" gate="G$1" pin="D+"/>
 </segment>
 </net>
 <net name="USB-" class="0">
 <segment>
-<wire x1="81.28" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="68.58" x2="86.36" y2="68.58" width="0" layer="91"/>
 <label x="86.36" y="68.58" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="RXD1/MISO/USB-/PD6"/>
 </segment>
 <segment>
-<wire x1="160.02" y1="68.58" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="68.58" x2="152.4" y2="68.58" width="0" layer="91"/>
 <label x="147.32" y="68.58" size="1.778" layer="95"/>
 <pinref part="CN1" gate="G$1" pin="D-"/>
 </segment>
 </net>
 <net name="PA3" class="0">
 <segment>
-<wire x1="-22.86" y1="53.34" x2="-25.4" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="53.34" x2="-25.4" y2="53.34" width="0" layer="91"/>
 <label x="-25.4" y="53.34" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="6"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="76.2" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="76.2" x2="15.24" y2="76.2" width="0" layer="91"/>
 <label x="12.7" y="76.2" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PA3/ADC3"/>
 </segment>
 </net>
 <net name="PA4" class="0">
 <segment>
-<wire x1="20.32" y1="73.66" x2="15.24" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="73.66" x2="15.24" y2="73.66" width="0" layer="91"/>
 <label x="12.7" y="73.66" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PA4/ADC4"/>
 </segment>
 <segment>
-<wire x1="-22.86" y1="55.88" x2="-25.4" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="55.88" x2="-25.4" y2="55.88" width="0" layer="91"/>
 <label x="-25.4" y="55.88" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="PC0" class="0">
 <segment>
-<wire x1="20.32" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="45.72" x2="15.24" y2="45.72" width="0" layer="91"/>
 <label x="15.24" y="45.72" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PC0/OC0A/SDA"/>
 </segment>
 <segment>
-<wire x1="-25.4" y1="76.2" x2="-20.32" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="76.2" x2="-20.32" y2="76.2" width="0" layer="91"/>
 <label x="-20.32" y="76.2" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="15"/>
 </segment>
 </net>
 <net name="PC1" class="0">
 <segment>
-<wire x1="20.32" y1="43.18" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="43.18" x2="15.24" y2="43.18" width="0" layer="91"/>
 <label x="15.24" y="43.18" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PC1/OC0B/XCK0/SCL"/>
 </segment>
 <segment>
-<wire x1="-25.4" y1="78.74" x2="-20.32" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="78.74" x2="-20.32" y2="78.74" width="0" layer="91"/>
 <label x="-20.32" y="78.74" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="16"/>
 </segment>
 </net>
 <net name="PC2" class="0">
 <segment>
-<wire x1="20.32" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="40.64" x2="15.24" y2="40.64" width="0" layer="91"/>
 <label x="15.24" y="40.64" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PC2/OC0C/RXD0"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="40.64" x2="99.06" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="40.64" x2="99.06" y2="40.64" width="0" layer="91"/>
 <label x="96.52" y="40.64" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="19"/>
 </segment>
 </net>
 <net name="PC3" class="0">
 <segment>
-<wire x1="20.32" y1="38.1" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="38.1" x2="15.24" y2="38.1" width="0" layer="91"/>
 <label x="15.24" y="38.1" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PC3/OC0D/TXD0"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="43.18" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="43.18" x2="99.06" y2="43.18" width="0" layer="91"/>
 <label x="96.52" y="43.18" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="18"/>
 </segment>
 </net>
 <net name="PC4" class="0">
 <segment>
-<wire x1="20.32" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="35.56" x2="15.24" y2="35.56" width="0" layer="91"/>
 <label x="15.24" y="35.56" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PC4/OC1A/#SS"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="45.72" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="45.72" x2="99.06" y2="45.72" width="0" layer="91"/>
 <label x="96.52" y="45.72" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="17"/>
 </segment>
 </net>
 <net name="PC5" class="0">
 <segment>
-<wire x1="20.32" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="33.02" x2="15.24" y2="33.02" width="0" layer="91"/>
 <label x="15.24" y="33.02" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PC5/OC1B/MOSI/XCK1"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="48.26" x2="99.06" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="48.26" x2="99.06" y2="48.26" width="0" layer="91"/>
 <label x="96.52" y="48.26" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="16"/>
 </segment>
 </net>
 <net name="PC6" class="0">
 <segment>
-<wire x1="20.32" y1="30.48" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="30.48" x2="15.24" y2="30.48" width="0" layer="91"/>
 <label x="15.24" y="30.48" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PC6/MISO/RXD1"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="50.8" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="50.8" x2="99.06" y2="50.8" width="0" layer="91"/>
 <label x="96.52" y="50.8" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="15"/>
 </segment>
 </net>
 <net name="PC7" class="0">
 <segment>
-<wire x1="20.32" y1="27.94" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="27.94" x2="15.24" y2="27.94" width="0" layer="91"/>
 <label x="15.24" y="27.94" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PC7/SCK/TXD1/CLKO/EVO"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="53.34" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="53.34" x2="99.06" y2="53.34" width="0" layer="91"/>
 <label x="96.52" y="53.34" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="14"/>
 </segment>
 </net>
 <net name="PB0" class="0">
 <segment>
-<wire x1="20.32" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="58.42" x2="17.78" y2="58.42" width="0" layer="91"/>
 <label x="15.24" y="58.42" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PB0/ADC8/AREFB"/>
 </segment>
 <segment>
-<wire x1="-25.4" y1="66.04" x2="-22.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="66.04" x2="-22.86" y2="66.04" width="0" layer="91"/>
 <label x="-25.4" y="66.04" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="11"/>
 </segment>
 </net>
 <net name="PB1" class="0">
 <segment>
-<wire x1="20.32" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="55.88" x2="17.78" y2="55.88" width="0" layer="91"/>
 <label x="15.24" y="55.88" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PB1/ADC9"/>
 </segment>
 <segment>
-<wire x1="-25.4" y1="68.58" x2="-22.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="68.58" x2="-22.86" y2="68.58" width="0" layer="91"/>
 <label x="-25.4" y="68.58" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="12"/>
 </segment>
 </net>
 <net name="PB2" class="0">
 <segment>
-<wire x1="20.32" y1="53.34" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="53.34" x2="17.78" y2="53.34" width="0" layer="91"/>
 <label x="15.24" y="53.34" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PB2/ADC10/DAC0"/>
 </segment>
 <segment>
-<wire x1="-25.4" y1="71.12" x2="-22.86" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="71.12" x2="-22.86" y2="71.12" width="0" layer="91"/>
 <label x="-25.4" y="71.12" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="13"/>
 </segment>
 </net>
 <net name="PB3" class="0">
 <segment>
-<wire x1="20.32" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="50.8" x2="17.78" y2="50.8" width="0" layer="91"/>
 <label x="15.24" y="50.8" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PB3/ADC11/DAC1"/>
 </segment>
 <segment>
-<wire x1="-25.4" y1="73.66" x2="-22.86" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="73.66" x2="-22.86" y2="73.66" width="0" layer="91"/>
 <label x="-25.4" y="73.66" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="14"/>
 </segment>
 </net>
 <net name="PD0" class="0">
 <segment>
-<wire x1="81.28" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="83.82" x2="86.36" y2="83.82" width="0" layer="91"/>
 <label x="83.82" y="83.82" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="OC0A/PD0"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="55.88" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="55.88" x2="99.06" y2="55.88" width="0" layer="91"/>
 <label x="96.52" y="55.88" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="13"/>
 </segment>
 </net>
 <net name="PD1" class="0">
 <segment>
-<wire x1="81.28" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="81.28" x2="86.36" y2="81.28" width="0" layer="91"/>
 <label x="83.82" y="81.28" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="OC0B/XCK0/PD1"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="58.42" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="58.42" x2="99.06" y2="58.42" width="0" layer="91"/>
 <label x="96.52" y="58.42" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="12"/>
 </segment>
 </net>
 <net name="PD2" class="0">
 <segment>
-<wire x1="81.28" y1="78.74" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="78.74" x2="86.36" y2="78.74" width="0" layer="91"/>
 <label x="83.82" y="78.74" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="OC0C/RXD0/PD2"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="60.96" x2="99.06" y2="60.96" width="0" layer="91"/>
 <label x="96.52" y="60.96" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="11"/>
 </segment>
 </net>
 <net name="PD3" class="0">
 <segment>
-<wire x1="81.28" y1="76.2" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="76.2" x2="86.36" y2="76.2" width="0" layer="91"/>
 <label x="83.82" y="76.2" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="OC0D/TXD0/PD3"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="63.5" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="63.5" x2="99.06" y2="63.5" width="0" layer="91"/>
 <label x="96.52" y="63.5" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="10"/>
 </segment>
 </net>
 <net name="PD4" class="0">
 <segment>
-<wire x1="81.28" y1="73.66" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="73.66" x2="86.36" y2="73.66" width="0" layer="91"/>
 <label x="83.82" y="73.66" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="SS/PD4"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="66.04" x2="99.06" y2="66.04" width="0" layer="91"/>
 <label x="96.52" y="66.04" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="9"/>
 </segment>
 </net>
 <net name="PD5" class="0">
 <segment>
-<wire x1="81.28" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="71.12" x2="86.36" y2="71.12" width="0" layer="91"/>
 <label x="83.82" y="71.12" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="XCK1/MOSI/PD5"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="68.58" x2="99.06" y2="68.58" width="0" layer="91"/>
 <label x="96.52" y="68.58" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="PE0" class="0">
 <segment>
-<wire x1="81.28" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="58.42" x2="86.36" y2="58.42" width="0" layer="91"/>
 <label x="83.82" y="58.42" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="OC0A/SDA/PE0"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="71.12" x2="96.52" y2="71.12" width="0" layer="91"/>
 <label x="96.52" y="71.12" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="PE1" class="0">
 <segment>
-<wire x1="81.28" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="55.88" x2="86.36" y2="55.88" width="0" layer="91"/>
 <label x="83.82" y="55.88" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="XCK0/OC0B/SCL/PE1"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="73.66" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="73.66" x2="99.06" y2="73.66" width="0" layer="91"/>
 <label x="96.52" y="73.66" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="PE2" class="0">
 <segment>
-<wire x1="81.28" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="53.34" x2="86.36" y2="53.34" width="0" layer="91"/>
 <label x="83.82" y="53.34" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="RXD0/OC0C/PE2"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="76.2" x2="99.06" y2="76.2" width="0" layer="91"/>
 <label x="96.52" y="76.2" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="PE3" class="0">
 <segment>
-<wire x1="81.28" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="50.8" x2="86.36" y2="50.8" width="0" layer="91"/>
 <label x="83.82" y="50.8" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="TXD0/OC0D/PE3"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="78.74" x2="99.06" y2="78.74" width="0" layer="91"/>
 <label x="96.52" y="78.74" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="PR0" class="0">
 <segment>
-<wire x1="20.32" y1="15.24" x2="17.78" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="15.24" x2="17.78" y2="15.24" width="0" layer="91"/>
 <label x="15.24" y="15.24" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PR0/XTAL2"/>
 <pinref part="Y1" gate="G$1" pin="2"/>
@@ -1874,7 +1884,7 @@ Epson Toyocom FCC-255</description>
 </net>
 <net name="PR1" class="0">
 <segment>
-<wire x1="20.32" y1="10.16" x2="15.24" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="10.16" x2="15.24" y2="10.16" width="0" layer="91"/>
 <label x="15.24" y="10.16" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PR1/XTAL1"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
@@ -1885,72 +1895,72 @@ Epson Toyocom FCC-255</description>
 </net>
 <net name="PA0" class="0">
 <segment>
-<wire x1="-25.4" y1="45.72" x2="-22.86" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="45.72" x2="-22.86" y2="45.72" width="0" layer="91"/>
 <label x="-22.86" y="45.72" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<wire x1="15.24" y1="83.82" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="83.82" x2="20.32" y2="83.82" width="0" layer="91"/>
 <label x="12.7" y="83.82" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PA0/ADC0/AREFA"/>
 </segment>
 </net>
 <net name="PA1" class="0">
 <segment>
-<wire x1="-22.86" y1="48.26" x2="-25.4" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="48.26" x2="-25.4" y2="48.26" width="0" layer="91"/>
 <label x="-25.4" y="48.26" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="81.28" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="81.28" x2="15.24" y2="81.28" width="0" layer="91"/>
 <label x="12.7" y="81.28" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PA1/ADC1"/>
 </segment>
 </net>
 <net name="PA2" class="0">
 <segment>
-<wire x1="20.32" y1="78.74" x2="15.24" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="78.74" x2="15.24" y2="78.74" width="0" layer="91"/>
 <label x="12.7" y="78.74" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PA2/ADC2"/>
 </segment>
 <segment>
-<wire x1="-22.86" y1="50.8" x2="-25.4" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="50.8" x2="-25.4" y2="50.8" width="0" layer="91"/>
 <label x="-25.4" y="50.8" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="PA5" class="0">
 <segment>
-<wire x1="-22.86" y1="58.42" x2="-25.4" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="58.42" x2="-25.4" y2="58.42" width="0" layer="91"/>
 <label x="-25.4" y="58.42" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="8"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="71.12" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="71.12" x2="15.24" y2="71.12" width="0" layer="91"/>
 <label x="12.7" y="71.12" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PA5/ADC5"/>
 </segment>
 </net>
 <net name="PA6" class="0">
 <segment>
-<wire x1="-22.86" y1="60.96" x2="-25.4" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="60.96" x2="-25.4" y2="60.96" width="0" layer="91"/>
 <label x="-25.4" y="60.96" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="9"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="68.58" x2="15.24" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="68.58" x2="15.24" y2="68.58" width="0" layer="91"/>
 <label x="12.7" y="68.58" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PA6/ADC6"/>
 </segment>
 </net>
 <net name="PA7" class="0">
 <segment>
-<wire x1="-22.86" y1="63.5" x2="-25.4" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="63.5" x2="-25.4" y2="63.5" width="0" layer="91"/>
 <label x="-25.4" y="63.5" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="10"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="66.04" x2="15.24" y2="66.04" width="0" layer="91"/>
 <label x="12.7" y="66.04" size="1.778" layer="95"/>
 <pinref part="ATXMEGA32A4U" gate="G$1" pin="PA7/ADC7"/>
 </segment>
