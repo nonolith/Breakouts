@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -152,7 +152,7 @@
 <text x="26.162" y="12.954" size="0.762" layer="25" font="vector" ratio="12">PA2</text>
 <text x="25.654" y="15.621" size="0.762" layer="25" font="vector" ratio="12">PA3</text>
 <text x="25.654" y="18.288" size="0.762" layer="25" font="vector" ratio="12">PA4</text>
-<text x="25.908" y="48.768" size="0.762" layer="25" font="vector" ratio="12">GND</text>
+<text x="25.908" y="48.768" size="0.762" layer="25" font="vector" ratio="12">5V</text>
 <text x="25.908" y="46.101" size="0.762" layer="25" font="vector" ratio="12">3.3V</text>
 <text x="25.654" y="40.767" size="0.762" layer="25" font="vector" ratio="12">PC1</text>
 <text x="25.654" y="38.481" size="0.762" layer="25" font="vector" ratio="12">PC0</text>
@@ -170,7 +170,7 @@
 <text x="23.495" y="6.35" size="0.762" layer="26" font="vector" ratio="12" rot="MR0">nonolithlabs.com/breakout</text>
 <text x="6.223" y="8.001" size="0.762" layer="25" font="vector" ratio="12">GND</text>
 <text x="26.289" y="5.207" size="0.762" layer="25" font="vector" ratio="12">GND</text>
-<text x="26.289" y="2.921" size="0.762" layer="25" font="vector" ratio="12">GND</text>
+<text x="26.289" y="2.921" size="0.762" layer="25" font="vector" ratio="12">5V</text>
 <text x="25.654" y="43.434" size="0.762" layer="25" font="vector" ratio="12">GND</text>
 </plain>
 <libraries>
@@ -779,7 +779,7 @@ Parts Updated:
 <clearance class="0" value="0.1524"/>
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -991,6 +991,8 @@ design rules under a new name.</description>
 <element name="R1" library="nonolith" package="0603" value="" x="10.922" y="11.176" smashed="yes" rot="R180">
 <attribute name="NAME" x="12.446" y="9.906" size="0.762" layer="25" font="vector" ratio="10" rot="R180"/>
 </element>
+<element name="C5" library="nonolith" package="0603" value="" x="21.844" y="40.894" rot="R270"/>
+<element name="C6" library="nonolith" package="0603" value="" x="22.606" y="4.064"/>
 </elements>
 <signals>
 <signal name="VCC">
@@ -1049,7 +1051,6 @@ design rules under a new name.</description>
 <wire x1="17.995" y1="37.589" x2="17.995" y2="35.814" width="0.254" layer="1"/>
 <wire x1="17.995" y1="35.814" x2="17.907" y2="35.902" width="0.254" layer="1"/>
 <wire x1="17.907" y1="35.902" x2="17.907" y2="35.941" width="0.254" layer="1"/>
-<wire x1="18.095" y1="37.689" x2="26.761" y2="46.355" width="0.254" layer="1"/>
 <wire x1="26.761" y1="46.355" x2="29.845" y2="46.355" width="0.254" layer="1"/>
 <wire x1="14.776190625" y1="17.097078125" x2="13.1731125" y2="15.494" width="0.254" layer="1"/>
 <wire x1="11.899" y1="15.494" x2="11.684" y2="15.494" width="0.254" layer="1"/>
@@ -1058,15 +1059,41 @@ design rules under a new name.</description>
 <wire x1="14.224" y1="16.51" x2="17.526" y2="19.812" width="0.254" layer="16"/>
 <via x="17.526" y="19.812" extent="1-16" drill="0.3302"/>
 <wire x1="17.526" y1="19.812" x2="17.272" y2="20.066" width="0.254" layer="1"/>
+<wire x1="18.095" y1="37.689" x2="18.252" y2="37.846" width="0.4064" layer="1"/>
+<wire x1="18.252" y1="37.846" x2="22.86" y2="37.846" width="0.4064" layer="1"/>
+<wire x1="22.86" y1="37.846" x2="24.638" y2="39.624" width="0.4064" layer="1"/>
+<wire x1="24.638" y1="39.624" x2="24.638" y2="44.196" width="0.4064" layer="1"/>
+<wire x1="24.638" y1="44.196" x2="26.797" y2="46.355" width="0.4064" layer="1"/>
+<wire x1="26.797" y1="46.355" x2="29.845" y2="46.355" width="0.4064" layer="1"/>
 </signal>
 <signal name="VUSB">
 <contactref element="U$2" pad="VIN"/>
 <contactref element="CN1" pad="P1"/>
-<wire x1="18.572" y1="46.601" x2="18.572" y2="41.686" width="0.254" layer="1"/>
+<wire x1="18.572" y1="46.601" x2="18.572" y2="42.418" width="0.254" layer="1"/>
+<wire x1="18.572" y1="42.418" x2="18.572" y2="41.686" width="0.254" layer="1"/>
 <wire x1="18.572" y1="41.686" x2="17.272" y2="40.386" width="0.254" layer="1"/>
 <wire x1="17.272" y1="40.386" x2="17.018" y2="40.132" width="0.254" layer="1"/>
 <wire x1="17.145" y1="40.289" x2="17.242" y2="40.386" width="0.254" layer="1"/>
 <wire x1="17.242" y1="40.386" x2="17.272" y2="40.386" width="0.254" layer="1"/>
+<contactref element="U$3" pad="19"/>
+<contactref element="U$3" pad="1"/>
+<wire x1="29.845" y1="48.895" x2="26.543" y2="48.895" width="0.4064" layer="1"/>
+<wire x1="26.543" y1="48.895" x2="21.717" y2="44.069" width="0.4064" layer="1"/>
+<wire x1="21.717" y1="44.069" x2="20.066" y2="42.418" width="0.4064" layer="1"/>
+<wire x1="20.066" y1="42.418" x2="18.572" y2="42.418" width="0.4064" layer="1"/>
+<wire x1="29.845" y1="3.175" x2="24.638" y2="8.382" width="0.4064" layer="16"/>
+<wire x1="24.638" y1="8.382" x2="24.638" y2="44.45" width="0.4064" layer="16"/>
+<wire x1="24.638" y1="44.45" x2="28.702" y2="48.514" width="0.4064" layer="16"/>
+<wire x1="28.702" y1="48.514" x2="29.718" y2="48.514" width="0.4064" layer="16"/>
+<contactref element="C5" pad="1"/>
+<contactref element="C6" pad="2"/>
+<wire x1="21.844" y1="41.744" x2="21.717" y2="41.871" width="0.4064" layer="1"/>
+<wire x1="21.717" y1="41.871" x2="21.717" y2="44.069" width="0.4064" layer="1"/>
+<wire x1="23.456" y1="4.064" x2="25.234" y2="2.286" width="0.4064" layer="1"/>
+<wire x1="25.234" y1="2.286" x2="27.94" y2="2.286" width="0.4064" layer="1"/>
+<wire x1="27.94" y1="2.286" x2="28.829" y2="3.175" width="0.4064" layer="1"/>
+<wire x1="28.829" y1="3.175" x2="29.845" y2="3.175" width="0.4064" layer="1"/>
+<wire x1="29.718" y1="48.514" x2="29.845" y2="48.895" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GND">
 <contactref element="ATXMEGA32A4U" pad="8"/>
@@ -1076,7 +1103,6 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="GND"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
-<contactref element="U$3" pad="19"/>
 <contactref element="U$4" pad="1"/>
 <via x="25.4" y="11.176" extent="1-16" drill="0.3302"/>
 <via x="22.606" y="16.51" extent="1-16" drill="0.3302"/>
@@ -1110,7 +1136,6 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="3"/>
 <contactref element="U$3" pad="17"/>
 <contactref element="U$3" pad="2"/>
-<contactref element="U$3" pad="1"/>
 <via x="19.812" y="14.224" extent="1-16" drill="0.3302"/>
 <via x="21.336" y="12.192" extent="1-16" drill="0.3302"/>
 <via x="28.194" y="19.558" extent="1-16" drill="0.3302"/>
@@ -1127,6 +1152,8 @@ design rules under a new name.</description>
 <wire x1="18.288" y1="19.05" x2="17.526" y2="18.288" width="0.254" layer="1"/>
 <contactref element="R1" pad="2"/>
 <via x="7.62" y="14.986" extent="1-16" drill="0.3302"/>
+<contactref element="C5" pad="2"/>
+<contactref element="C6" pad="1"/>
 </signal>
 <signal name="PDI-DATA">
 <contactref element="ATXMEGA32A4U" pad="34"/>

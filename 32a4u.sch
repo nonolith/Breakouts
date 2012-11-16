@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1943,6 +1943,8 @@ Parts Updated:
 <part name="U$5" library="nonolith" deviceset="GND" device=""/>
 <part name="U$6" library="nonolith" deviceset="GND" device=""/>
 <part name="R1" library="nonolith" deviceset="RESISTOR" device="0603"/>
+<part name="C5" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C6" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -1965,6 +1967,8 @@ Parts Updated:
 <instance part="U$5" gate="G$1" x="5.08" y="0"/>
 <instance part="U$6" gate="G$1" x="99.06" y="15.24"/>
 <instance part="R1" gate="G$1" x="96.52" y="43.18"/>
+<instance part="C5" gate="G$1" x="-7.62" y="81.28"/>
+<instance part="C6" gate="G$1" x="-7.62" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -2019,6 +2023,18 @@ Parts Updated:
 <label x="147.32" y="63.5" size="1.778" layer="95"/>
 <pinref part="CN1" gate="G$1" pin="VBUS"/>
 </segment>
+<segment>
+<label x="-20.32" y="86.36" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="19"/>
+<pinref part="C5" gate="G$1" pin="P$1"/>
+<wire x1="-7.62" y1="86.36" x2="-25.4" y2="86.36" width="0" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="1"/>
+<label x="-22.86" y="40.64" size="1.778" layer="95"/>
+<pinref part="C6" gate="G$1" pin="P$2"/>
+<wire x1="-25.4" y1="40.64" x2="-7.62" y2="40.64" width="0" layer="91"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -2046,11 +2062,6 @@ Parts Updated:
 <label x="111.76" y="2.54" size="1.778" layer="95"/>
 <label x="111.76" y="2.54" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-25.4" y1="86.36" x2="-20.32" y2="86.36" width="0" layer="91"/>
-<label x="-20.32" y="86.36" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="19"/>
 </segment>
 <segment>
 <wire x1="111.76" y1="88.9" x2="109.22" y2="88.9" width="0" layer="91"/>
@@ -2093,13 +2104,16 @@ Parts Updated:
 <label x="-22.86" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="1"/>
-<wire x1="-25.4" y1="40.64" x2="-22.86" y2="40.64" width="0" layer="91"/>
-<label x="-22.86" y="40.64" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="P$2"/>
+<pinref part="C6" gate="G$1" pin="P$1"/>
+<wire x1="-7.62" y1="78.74" x2="-7.62" y2="63.5" width="0" layer="91"/>
+<wire x1="-7.62" y1="63.5" x2="-7.62" y2="48.26" width="0" layer="91"/>
+<wire x1="-7.62" y1="63.5" x2="-2.54" y2="63.5" width="0" layer="91"/>
+<label x="-5.08" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PDI-DATA" class="0">
